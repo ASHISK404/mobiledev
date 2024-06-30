@@ -13,4 +13,6 @@ my mobile dev file
 {"_id":"5d9f2ff866800913001b56f519c5fbe9","_openid":"omze760QSmvUD8aYqH7UfptV4eDQ","cart":[2.0,2.0,2.0,1.0],"password":"1474648596","phone":"114514","username":"aashi"}
 {"_id":"b34e86aa6680d2cd00226dd025aa0826","cart":[],"password":"114514","phone":"114514","username":"yyfe","_openid":"omze760QSmvUD8aYqH7UfptV4eDQ"}
 
-本项目未使用云函数，所以仅需创建并导入相应的数据库数据
+本项目未使用云函数，所以仅需以微信开发者工具打开，开通云服务创建并导入相应的数据库数据
+
+小组成员(1人):刘宇轩
