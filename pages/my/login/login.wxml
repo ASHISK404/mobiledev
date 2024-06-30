@@ -1,0 +1,22 @@
+<view class="v1">
+   <view class="v2">
+     <view class="name">
+       <input placeholder="请输入账号" type="number" bindinput="username" />
+     </view>
+     <view class=password">
+       <input placeholder="请输入密码" type="password" bindinput="password" />
+     </view>
+     <view class="loginb">
+       <button class="btn-dl" type="primary" bindtap="getuser">登录</button>
+       <view class="register" bindtap="forget">
+         忘记密码
+     </view>
+       <view class="register" bindtap="register">
+         去注册
+     </view>
+     </view>
+   </view>
+ </view>
+  
+
+  

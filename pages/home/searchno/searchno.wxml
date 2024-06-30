@@ -1,0 +1,8 @@
+<view class='all'>
+<view class="scroll_view_item"></view>
+<view class='noContent'>
+  <view>暂时没有数据</view>
+  <view>搜索其他关键字试试</view>
+</view>
+<view class="scroll_view_item"></view>
+</view>

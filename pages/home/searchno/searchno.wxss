@@ -1,0 +1,22 @@
+page {
+  background: #F3F3F3;
+}
+.all {
+  width: 100%;
+  height: auto;
+}
+.scroll_view_item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.noContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30%;
+  align-items: center; 
+  font-size: 35rpx;
+  
+}

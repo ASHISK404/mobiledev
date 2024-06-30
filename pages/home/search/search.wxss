@@ -1,0 +1,76 @@
+/* pages/home/home.wxss */
+.slide-image{
+  width: 100%;
+}
+
+.lists{
+  padding: 0 20rpx ;
+  box-sizing: border-box;
+}
+.list{
+   padding: 30rpx 10rpx;
+   background: #FFF;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   margin-top: 20rpx;
+}
+.column{
+   background: #FFF;
+   display: flex;
+   flex-direction: row;
+}
+.list-left{
+  width:28%;
+  height:120px
+}
+.list-right{
+  width:70%;
+  height:100%;
+  padding-left:36rpx;
+  display: flex;
+  flex-direction: column;
+}
+.right-text{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.money{
+  text-decoration:line-through;
+  font-size:10px;
+  padding-left:36rpx;
+  padding-top:5rpx;
+  display: flex;
+  align-items: center; 
+}
+.sale{
+  color:#e91e56;
+  font-weight:bold;
+  font-size:20px;
+}
+.sell{
+  width:40%;
+  margin-right: 0px;
+  padding-right: 0px;
+  text-align: right;
+  font-size: 10px;
+  color:#808080;
+  display: flex;
+  flex-direction: row-reverse;  
+  align-items: center; 
+}
+.evaluation{
+  font-size: 10px;
+  color:#808080;
+}
+.abstract{
+   padding-top:30rpx;
+  font-size: 10px;
+  color:#808080;
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

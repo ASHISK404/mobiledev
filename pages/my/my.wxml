@@ -1,0 +1,16 @@
+<!--pages/my/my.wxml-->
+
+
+ <view class='parent' >
+    <view class='top'>
+      <view class='head' bind:tap="Tologin">
+        <image src='../img/resume.png'></image>
+        <view wx:if="{{list.length === 0}}" class='logouttext'>点击登录</view>
+      <view wx:for="{{list}}" wx:for-index="index" wx:for-item="item" data-obj='{{item}}'>
+        <view class='logouttext'>点击退出登录</view>
+        <view class='name'>用户名: {{item.username}}</view>
+        <view class='name'>电话号: {{item.phone}}</view>
+        </view>
+      </view>
+    </view>
+  </view>

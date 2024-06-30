@@ -1,0 +1,65 @@
+
+<view style='background:#EEE'>
+<view class="topbar">
+	<view class="topbar top">
+	    <view class="topbar top text" style="{{currentTab==0?'background-color:red;':''}}" bindtap="clickTab"  data-current="0">
+	      	<view class="topbar top text tab "  
+          style="{{currentTab==0?'background-color:red;color:#fff':''}}">专辑</view>
+	</view>
+	    <view class="topbar top text" style="{{currentTab==1?'background-color:red;':''}}" bindtap="clickTab" data-current="1">
+	      	<view class="topbar top text tab " 
+          style="{{currentTab==1?'background-color:red;color:#fff':''}}">工具</view>
+	    </view>
+      <view class="topbar top text" style="{{currentTab==2?'background-color:red;':''}}" bindtap="clickTab" data-current="2">
+	      	<view class="topbar top text tab " 
+          style="{{currentTab==2?'background-color:red;color:#fff':''}}"
+          >服装</view>
+	    </view>
+    	
+  	</view>
+</view>
+<view class='lists'>
+ <view class="list {{currentTab==0?'':'hide'}}"  bindtap='toDetail' wx:for="{{list}}" wx:for-index="index" wx:for-item="item" data-obj='{{item}}' wx:if="{{item.gtype === 'cd'}}">
+    <image class='list-left' src='{{item.url}}'></image>
+    <view class='list-right'>
+    <view class='column'>
+      <view class='right-text'>{{item.name}}</view>
+      </view>
+     <view>
+     <view class='column'>
+      <view class='sale'>{{item.price}}</view>
+     </view>
+      <view class='abstract'>{{item.goodsdesc}}</view>
+     </view>
+    </view>
+  </view>
+  <view class="list {{currentTab==1?'':'hide'}}"  bindtap='toDetail' wx:for="{{list}}" wx:for-index="index" wx:for-item="item" data-obj='{{item}}' wx:if="{{item.gtype === 'tool'}}">
+    <image class='list-left' src='{{item.url}}'></image>
+    <view class='list-right'>
+    <view class='column'>
+      <view class='right-text'>{{item.name}}</view>
+      </view>
+     <view>
+     <view class='column'>
+      <view class='sale'>{{item.price}}</view>
+     </view>
+      <view class='abstract'>{{item.goodsdesc}}</view>
+     </view>
+    </view>
+  </view>
+   <view class="list {{currentTab==2?'':'hide'}}"  bindtap='toDetail' wx:for="{{list}}" wx:for-index="index" wx:for-item="item" data-obj='{{item}}'  wx:if="{{item.gtype === 'dress'}}">
+    <image class='list-left' src='{{item.url}}'></image>
+    <view class='list-right'>
+    <view class='column'>
+      <view class='right-text'>{{item.name}}</view>
+      </view>
+     <view>
+     <view class='column'>
+      <view class='sale'>{{item.price}}</view>
+     </view>
+      <view class='abstract'>{{item.goodsdesc}}</view>
+     </view>
+    </view>
+  </view>
+</view>
+</view>

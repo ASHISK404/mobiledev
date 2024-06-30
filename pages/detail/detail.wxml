@@ -1,0 +1,27 @@
+<!--pages/detail/detail.wxml-->
+<view style='background:#eee' >
+  <block wx:for="{{list}}" wx:for-item="item" data-obj='{{item}}'>
+  <view style='height:600rpx;background:#fff'>
+        <image src="{{item.url}}" class="image" />
+      </view>
+  <view class='money'>
+    <text style='color:red;font-size:20px'>{{item.price}}</text>
+  </view>
+  <view class='abstract'>商品介绍: {{item.goodsdesc2}} </view>
+</block>
+  <view class='evaluate'>
+
+<view style='text-align:center;padding:20rpx;'> 商品详情 </view>
+    <view class='img'>
+      <block wx:for="{{list}}" wx:for-item="item" data-obj='{{item}}'>
+        <image style='width: 100%;' src='{{item.url}}'></image>
+      </block>
+    </view>
+</view>
+  <view class="bottom">
+  <view class="bottom-left">
+    <view class="bottom-buy button1" bindtap='addcart' style='color:red;'>加入购物车</view>
+    <view class="bottom-buy button" bindtap='tobuy' style='background-color:#FF0000;'>立即购买</view>
+  </view>
+</view>
+</view>

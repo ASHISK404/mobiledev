@@ -1,0 +1,34 @@
+<!--pages/home/home.wxml-->
+
+<view style='background:#EEE'>
+<view class='lists'>
+  <view class='list' wx:key="" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" data-obj='{{item}}' bindtap='toDetail'>
+    <image class='list-left' src='{{item.url}}'></image>
+    <view class='list-right'>
+      <view class='right-text'>{{item.name}}    已选择 {{item.count}} 件</view>
+     <view>
+     <view class='column' catchtap>
+     <view class='sale'>￥{{item.price}}</view>
+              <view  class='item'>
+                <image  data-id='{{item.gid}}' src='{{icons[1]}}' bind:tap="des"></image>
+              </view>
+              <view class='item'>{{item.count}}</view>
+              <view class='item'>
+               <image data-id='{{item.gid}}' src='{{icons[0]}}' bind:tap="plus"></image>
+              </view>
+      </view>
+     </view>
+    </view>
+  </view>
+</view>
+
+<view class="bottom">
+  <view class="bottom-sum">
+    <view class="bottom-sum price">合计：
+      <text style="color:#FF0000">￥{{totalfee}}</text>
+    </view>
+    <view class="bottom-sum space"></view>
+    <view class="bottom-sum button" bind:tap="topay" style='background-color:#FF0000;'>跳转到支付</view>
+  </view>
+</view>
+</view>

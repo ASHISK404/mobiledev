@@ -1,0 +1,23 @@
+<!--pages/my/register/register.wxml-->
+<view class="v1">
+
+<view class="v2">
+  <view class="name">
+    <input placeholder="请输入账号" type="number" bindinput="username" />
+  </view>
+  <view class=password">
+    <input placeholder="请输入密码" type="password" bindinput="password" />
+  </view>
+  <view class=phone">
+    <input placeholder="请输入手机号" type="password" bindinput="phone" />
+    <input placeholder="请输入验证码"  bindinput="code" />
+    <view class="code" bindtap="sendCode">发送验证码</view>
+  </view>
+  <view class="loginb">
+    <button class="btn-dl" type="primary" bindtap="register">注册</button>
+    <view class="register" bindtap="login">
+      已有账号，去登录
+  </view>
+  </view>
+</view>
+</view>

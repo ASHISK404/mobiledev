@@ -1,0 +1,48 @@
+<!--pages/home/home.wxml-->
+<!-- 搜索栏 -->
+<view class="searchView">
+  <view class="search" style="background-color:{{scrollTop>=170 ? 'white' : ' rgba(255, 255, 255, 0)'}};padding-top:10rpx">
+    <view class="search input" style="background-color:{{scrollTop>=170 ? '#E1E1E1' : ' rgba(255, 255, 255, 0.6)'}};">
+      <input placeholder='请输入内容' bindinput="searchValue" bindconfirm="search" value='{{searchValue}}'></input>
+      <view class="search click">
+        <icon type="search" size='36rpx' catch:tap="search" style='margin-right:20rpx;'></icon>
+      </view>
+    </view>
+  </view>
+</view>
+<view style='background:#EEE'>
+<view style="height: 8vh;"></view>
+<view class='home-content'>
+<view class="function">
+    <view class="function item" bindtap='toType'  data-id="0">
+    <image src="../img/cd.png" style="width: 100%;height: 100%;"></image>
+      <view class="function item label">专辑</view>
+    </view>
+    <view class="function item"  bindtap='toType' open-type="switchTab"  data-id="1">
+      <image src="../img/tool.png" style="width: 100%;height: 100%;"></image>
+      <text class="function item label">工具</text>
+    </view>
+    <view class="function item"  bindtap='toType' open-type="switchTab"  data-id="2">
+      <image src="../img/dress.png" style="width: 100%;height: 100%;"></image>
+      <text class="function item label">服装</text>
+    </view>
+  </view>
+
+</view>
+<view class='lists'>
+  <view class='list' bindtap='toDetail' wx:for="{{list}}" wx:for-index="index" wx:for-item="item" data-obj='{{item}}'>
+    <image class='list-left' src='{{item.url}}' data-id='{{item.id}}'></image>
+    <view class='list-right'>
+    <view class='column'>
+      <view class='right-text'>{{item.name}}</view>
+      </view>
+     <view>
+     <view class='column'>
+      <view class='money'>{{item.price}}</view>
+     </view>
+      <view class='abstract'>{{item.goodsdesc}}</view>
+     </view>
+    </view>
+  </view>
+</view>
+</view>

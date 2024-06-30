@@ -1,0 +1,135 @@
+/* pages/home/home.wxss */
+.searchView {
+  width: 100%;
+  height: 80rpx;
+  z-index: 1;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  /* background-color: #fff; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .input {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50rpx;
+}
+
+.search .input input {
+  width: 100%;
+  height: 100%;
+  font-size: 35rpx;
+  /* text-align: center; *//* background-color: #e5dede; */
+  padding: 0 50rpx;
+  border-radius: 50rpx;
+}
+
+.search .click {
+  width: 10%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.function {
+  width: 100%;
+  height: 190rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.function .item {
+  width: 150rpx;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.function .item .label {
+  width: 150rpx;
+  height: 20rpx;
+  font-size: 28rpx;
+  color: rgb(90, 89, 89);
+}
+
+.home-content{
+  box-sizing: border-box;
+}
+.home-title{
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  background: #FFF;
+  box-sizing: border-box;
+}
+.home-title text{
+  font-size: 20px;
+  color: #808080;
+}
+.lists{
+  box-sizing: border-box;
+}
+.list{
+   padding: 30rpx 10rpx;
+   background: #FFF;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+}
+.column{
+   background: #FFF;
+   display: flex;
+   flex-direction: row;
+}
+.list-left{
+  width:28%;
+  height:120px
+}
+.list-right{
+  width:70%;
+  height:100%;
+  padding-left:36rpx;
+  display: flex;
+  flex-direction: column;
+}
+.right-text{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  font-weight:bold;
+  width: 100px;
+}
+.money{
+  color:#e91e56;
+  font-weight:bold;
+  font-size:20px;
+}
+.abstract{
+   padding-top:30rpx;
+  font-size: 10px;
+  color:#808080;
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

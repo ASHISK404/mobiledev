@@ -1,0 +1,22 @@
+
+<view style='background:#EEE'>
+
+<view class='lists'>
+ <!--bindtap绑定事件-->
+  <view class='list' bindtap='toDetail' wx:for="{{list}}" wx:for-index="index" wx:for-item="item" data-obj='{{item}}'>
+    <image class='list-left' src='{{item.url}}'></image>
+    <view class='list-right'>
+    <view class='column'>
+      <view class='right-text'>{{item.name}}</view>
+      </view>
+     <view>
+     <view class='column'>
+      <view class='sale'>{{item.price}}</view>
+     </view>
+     <view class='evaluation'>{{item.evaluation}}人评价</view>
+      <view class='abstract'>{{item.goodsdesc}}</view>
+     </view>
+    </view>
+  </view>
+</view>
+</view>

@@ -1,0 +1,34 @@
+/* pages/my/my.wxss */
+
+.parent{
+  background-color: rgb(83, 83, 83);
+   height: 100vh;
+   padding: 0 20rpx;
+}
+.top{
+  display: flex;
+}
+.name{
+  color: #ffffff;
+  padding-top:20rpx;
+  font-size:16px;
+  text-align: center;
+}
+.logouttext{
+  color: #ffffff;
+  padding-top:20rpx;
+  font-size:8px;
+  text-align: center;
+}
+.head{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30vh;
+}
+.head image{
+  width:160rpx;
+  height:160rpx;
+  border-radius:80rpx;
+}

@@ -1,0 +1,82 @@
+/* pages/home/home.wxss */
+.lists{
+  padding-left: 130rpx;
+  box-sizing: border-box;
+}
+.list{
+   padding: 30rpx 10rpx;
+   background: #FFF;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   margin-top: 20rpx;
+}
+.hide{
+  display: none;
+}
+.column{
+   background: #FFF;
+   display: flex;
+   flex-direction: row;
+}
+.list-left{
+  width:28%;
+  height:120px
+}
+.list-right{
+  width:70%;
+  height:100%;
+  padding-left:36rpx;
+  display: flex;
+  flex-direction: column;
+}
+.right-text{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.sale{
+  color:#e91e56;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.abstract{
+   padding-top:30rpx;
+  font-size: 10px;
+  color:#808080;
+  overflow: hidden;
+}
+.topbar{
+	position: fixed;
+	z-index: 1;
+	top: 50;
+}
+.topbar .top {
+  width: 0%;
+  height: 50rpx;
+  background-color: #ffffff;
+  position: static;
+}
+
+.topbar .top .text {
+  margin: 5rpx;
+  padding: 10rpx;
+  font-size: 20px;
+  width: 90rpx;
+  height: 60rpx;
+  display: flex;
+  flex-direction: column;
+  border-radius:10rpx;
+}
+
+.topbar .top .text .tab {
+  width: auto;
+  flex-basis: 90%;
+  text-align: center;
+  font-size: 10px;
+  color: #000000;
+  padding-top: 10rpx;
+}
+
